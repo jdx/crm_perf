@@ -15,23 +15,23 @@ Back-End Performance Results
 
 [Rails + PostgreSQL + HTML](https://www.blitz.io/report/14700fa0c283368a02ee6b23dc89c50f)
 
-![Rails + PostgreSQL]('rails-postgres-html.png')
+![Rails + PostgreSQL](rails-postgres-html.png)
 
-[Rails + PostgreSQL]()
+[Rails + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38884)
 
-![Rails + PostgreSQL]('rails-postgres.png')
+![Rails + PostgreSQL](rails-postgres.png)
 
 Rails + MongoDB
 
-![Rails + MongoDB]('rails-mongodb.png')
+![Rails + MongoDB](rails-mongodb.png)
 
 node.js + PostgreSQL
 
-![node.js + MongoDB]('node-pg.png')
+![node.js + MongoDB](node-pg.png)
 
 [node.js + MongoDB](https://www.blitz.io/report/14700fa0c283368a02ee6b23dc89ac8b)
 
-![node.js + MongoDB]('node-mongo.png')
+![node.js + MongoDB](node-mongo.png)
 
 TODO
 ====
