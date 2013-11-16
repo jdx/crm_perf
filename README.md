@@ -18,6 +18,28 @@ contrived applications. You should try these experiments (and more!) yourself to
 determine what the right stack for your application is. I'm not trying to prove
 a point about anything here, just having fun.
 
+Results
+-------
+
+| Framework       | Database   | Notes  | Hits  | Response Time |
+| --------------- | ---------- | ------ | ----- | ------------- |
+| Rails (Webrick) | PostgreSQL | HTML   | 5814  | 199ms         |
+| Rails (Thin)    | PostgreSQL | HTML   | 8256  | 177ms         |
+| Rails (Webrick) | PostgreSQL |        | 5722  | 278ms         |
+| Rails (Thin)    | PostgreSQL |        | 6525  | 431ms         |
+| Rails (Thin)    | MongoDB    | no orm | 4875  | 560ms         |
+| node.js         | PostgreSQL |        | 26080 | 100ms         |
+| node.js         | MongoDB    |        | 27304 | 71ms          |
+
+Notes
+-----
+
+* node.js tests never used an orm
+* It's very interesting that rails + mongo was slower than rails + pg since you'd think mongo would be faster, and that there was no ORM with mongo. This was repeatable too.
+
+blitz.io
+--------
+
 [Rails (Webrick) + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d43064b)
 
 ![Rails (Webrick) + PostgreSQL + HTML](rails-pg-webrick-html.png)
