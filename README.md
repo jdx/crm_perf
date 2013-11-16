@@ -22,24 +22,27 @@ a point about anything here, just having fun.
 Results
 -------
 
-| Framework             | Database   | Notes  | Hits  | Response Time |
-| --------------------- | ---------- | ------ | ----- | ------------- |
-| Rails (Webrick)       | PostgreSQL | HTML   | 5814  | 199ms         |
-| Rails (Thin)          | PostgreSQL | HTML   | 8256  | 177ms         |
-| Rails (Webrick)       | PostgreSQL |        | 5722  | 278ms         |
-| Rails (Thin)          | PostgreSQL |        | 6525  | 431ms         |
-| Rails (unicorn 3x)    | PostgreSQL |        | 16060 | 252ms         |
-| Rails (unicorn 4x)    | PostgreSQL |        | 13439 | 315ms         |
-| Rails (Thin)          | MongoDB    | no orm | 4875  | 560ms         |
-| Sinatra (Thin)        | MongoDB    | no orm | 12455 | 234ms         |
-| Sinatra (unicorn 10x) | MongoDB    | no orm | 28215 | 42ms          |
-| node.js               | PostgreSQL |        | 26080 | 100ms         |
-| node.js               | MongoDB    |        | 27304 | 71ms          |
-| Scala/Play            | MongoDB    |        | 25811 | 68ms          |
+| Framework                         | Database   | Notes  | Hits  | Response Time |
+| --------------------------------- | ---------- | ------ | ----- | ------------- |
+| Rails (Webrick)                   | PostgreSQL | HTML   | 5814  | 199ms         |
+| Rails (Thin)                      | PostgreSQL | HTML   | 8256  | 177ms         |
+| Rails (Webrick)                   | PostgreSQL |        | 5722  | 278ms         |
+| Rails (Thin)                      | PostgreSQL |        | 6525  | 431ms         |
+| Rails (unicorn 3x)                | PostgreSQL |        | 16060 | 252ms         |
+| Rails (unicorn 4x)                | PostgreSQL |        | 13439 | 315ms         |
+| Rails (Thin)                      | MongoDB    | no orm | 4875  | 560ms         |
+| Sinatra (Thin)                    | MongoDB    | no orm | 12455 | 234ms         |
+| Sinatra (unicorn 10x, 1000 users) | MongoDB    | no orm | 28215 | 42ms          |
+| Sinatra (unicorn 10x, 2000 users) | MongoDB    | no orm | 46286 | 205ms         |
+| Sinatra (unicorn 10x, 4000 users) | MongoDB    | no orm | 65494 | 152ms         |
+| node.js                           | PostgreSQL |        | 26080 | 100ms         |
+| node.js                           | MongoDB    |        | 27304 | 71ms          |
+| Scala/Play                        | MongoDB    |        | 25811 | 68ms          |
 
 Notes
 -----
 
+* sinatra blew everything away, but running 10 process on one box is sort of cheating.
 * anything not marked as 'HTML' was hitting `api/v1/customers.json`.
 * node.js tests never used an orm
 * It's very interesting that rails + mongo was slower than rails + pg since you'd think mongo would be faster, and that there was no ORM with mongo. This was repeatable too.
@@ -79,9 +82,17 @@ blitz.io
 
 ![Sinatra (thin) + MongoDB](sinatra-mongo-thin.png)
 
-[Sinatra (unicorn 10x) + MongoDB]()
+[Sinatra (unicorn 10x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de20966)
 
 ![Sinatra (unicorn 10x) + MongoDB](sinatra-mongo-unicorn10.png)
+
+[Sinatra (unicorn 10x 2000 users) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de20097)
+
+![Sinatra (unicorn 10x 2000 users) + MongoDB](sinatra-mongo-unicorn10-2000.png)
+
+[Sinatra (unicorn 10x 4000 users) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d41c1a4)
+
+![Sinatra (unicorn 10x 4000 users) + MongoDB](sinatra-mongo-unicorn10-4000.png)
 
 [node.js + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de36ccb)
 
