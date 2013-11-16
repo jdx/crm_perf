@@ -13,6 +13,11 @@ There are 4 applications in this series:
 Back-End Performance Results
 ============================
 
+DO NOT READ TOO MUCH INTO THESE. This was just me playing around writing super
+contrived applications. You should try these experiments (and more!) yourself to
+determine what the right stack for your application is. I'm not trying to prove
+a point about anything here, just having fun.
+
 [Rails + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d43064b)
 
 ![Rails + PostgreSQL](rails-pg-html.png)
@@ -25,11 +30,11 @@ Rails + MongoDB
 
 ![Rails + MongoDB](rails-mongodb.png)
 
-node.js + PostgreSQL
+[node.js + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de36ccb)
 
 ![node.js + MongoDB](node-pg.png)
 
-[node.js + MongoDB](https://www.blitz.io/report/14700fa0c283368a02ee6b23dc89ac8b)
+[node.js + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d637839)
 
 ![node.js + MongoDB](node-mongo.png)
 
