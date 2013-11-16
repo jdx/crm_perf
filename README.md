@@ -15,11 +15,11 @@ Back-End Performance Results
 
 [Rails + PostgreSQL + HTML](https://www.blitz.io/report/14700fa0c283368a02ee6b23dc89c50f)
 
-![Rails + PostgreSQL](rails-postgres-html.png)
+![Rails + PostgreSQL](rails-pg-html.png)
 
 [Rails + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38884)
 
-![Rails + PostgreSQL](rails-postgres.png)
+![Rails + PostgreSQL](rails-pg.png)
 
 Rails + MongoDB
 
