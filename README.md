@@ -3,7 +3,7 @@ CRM Perf
 
 A demo CRM for my talk on "The Thick Front-End".
 
-There are 4 applications in this series:
+There are 5 applications in this series:
 
 * [CRM Rails](http://github.com/dickeyxxx/crm_rails). A standard Rails app with no ajax and an API. Shows the baseline of how most apps are developed today.
 * [CRM Rails-jQuery](http://github.com/dickeyxxx/crm_rails_jquery). A fork of CRM Rails that uses basecamp-style ajax.
@@ -32,6 +32,7 @@ Results
 | Rails (Thin)       | MongoDB    | no orm | 4875  | 560ms         |
 | node.js            | PostgreSQL |        | 26080 | 100ms         |
 | node.js            | MongoDB    |        | 27304 | 71ms          |
+| Scala/Play         | MongoDB    |        | 25811 | 68ms          |
 
 Notes
 -----
@@ -75,8 +76,6 @@ blitz.io
 
 ![node.js + MongoDB](node-mongo.png)
 
-TODO
-====
+[Scala (Play) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d62e6f2)
 
-* API documentation
-* Scala
+![Scala + MongoDB](scala-mongo.png)
