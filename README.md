@@ -13,11 +13,11 @@ There are 4 applications in this series:
 Back-End Performance Results
 ============================
 
-[Rails + PostgreSQL + HTML](https://www.blitz.io/report/14700fa0c283368a02ee6b23dc89c50f)
+[Rails + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d43064b)
 
 ![Rails + PostgreSQL](rails-pg-html.png)
 
-[Rails + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38884)
+[Rails + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38308)
 
 ![Rails + PostgreSQL](rails-pg.png)
 
