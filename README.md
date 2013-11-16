@@ -34,9 +34,9 @@ a point about anything here, just having fun.
 
 ![Rails (Thin) + PostgreSQL](rails-pg-thin.png)
 
-Rails + MongoDB
+[Rails (Thin) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de2ede0)
 
-![Rails + MongoDB](rails-mongodb.png)
+![Rails + MongoDB](rails-mongo-thin.png)
 
 [node.js + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de36ccb)
 
