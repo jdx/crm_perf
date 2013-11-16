@@ -22,18 +22,20 @@ a point about anything here, just having fun.
 Results
 -------
 
-| Framework          | Database   | Notes  | Hits  | Response Time |
-| ------------------ | ---------- | ------ | ----- | ------------- |
-| Rails (Webrick)    | PostgreSQL | HTML   | 5814  | 199ms         |
-| Rails (Thin)       | PostgreSQL | HTML   | 8256  | 177ms         |
-| Rails (Webrick)    | PostgreSQL |        | 5722  | 278ms         |
-| Rails (Thin)       | PostgreSQL |        | 6525  | 431ms         |
-| Rails (unicorn 3x) | PostgreSQL |        | 16060 | 252ms         |
-| Rails (unicorn 4x) | PostgreSQL |        | 13439 | 315ms         |
-| Rails (Thin)       | MongoDB    | no orm | 4875  | 560ms         |
-| node.js            | PostgreSQL |        | 26080 | 100ms         |
-| node.js            | MongoDB    |        | 27304 | 71ms          |
-| Scala/Play         | MongoDB    |        | 25811 | 68ms          |
+| Framework             | Database   | Notes  | Hits  | Response Time |
+| --------------------- | ---------- | ------ | ----- | ------------- |
+| Rails (Webrick)       | PostgreSQL | HTML   | 5814  | 199ms         |
+| Rails (Thin)          | PostgreSQL | HTML   | 8256  | 177ms         |
+| Rails (Webrick)       | PostgreSQL |        | 5722  | 278ms         |
+| Rails (Thin)          | PostgreSQL |        | 6525  | 431ms         |
+| Rails (unicorn 3x)    | PostgreSQL |        | 16060 | 252ms         |
+| Rails (unicorn 4x)    | PostgreSQL |        | 13439 | 315ms         |
+| Rails (Thin)          | MongoDB    | no orm | 4875  | 560ms         |
+| Sinatra (Thin)        | MongoDB    | no orm | 12455 | 234ms         |
+| Sinatra (unicorn 10x) | MongoDB    | no orm | 28215 | 42ms          |
+| node.js               | PostgreSQL |        | 26080 | 100ms         |
+| node.js               | MongoDB    |        | 27304 | 71ms          |
+| Scala/Play            | MongoDB    |        | 25811 | 68ms          |
 
 Notes
 -----
@@ -72,6 +74,14 @@ blitz.io
 [Rails (Thin) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d42e374)
 
 ![Rails + MongoDB](rails-mongo-thin.png)
+
+[Sinatra (thin) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d81e072)
+
+![Sinatra (thin) + MongoDB](sinatra-mongo-thin.png)
+
+[Sinatra (unicorn 10x) + MongoDB]()
+
+![Sinatra (unicorn 10x) + MongoDB](sinatra-mongo-unicorn10.png)
 
 [node.js + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de36ccb)
 
