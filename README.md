@@ -18,13 +18,21 @@ contrived applications. You should try these experiments (and more!) yourself to
 determine what the right stack for your application is. I'm not trying to prove
 a point about anything here, just having fun.
 
-[Rails + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d43064b)
+[Rails (Webrick) + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d43064b)
 
-![Rails + PostgreSQL](rails-pg-html.png)
+![Rails (Webrick) + PostgreSQL + HTML](rails-pg-webrick-html.png)
 
-[Rails + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38308)
+[Rails (Thin) + PostgreSQL + HTML](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d826410)
 
-![Rails + PostgreSQL](rails-pg.png)
+![Rails (Thin) + PostgreSQL + HTML](rails-pg-thin-html.png)
+
+[Rails (Webrick) + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de38308)
+
+![Rails (Webrick) + PostgreSQL](rails-pg-webrick.png)
+
+[Rails (Thin) + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de3086a)
+
+![Rails (Thin) + PostgreSQL](rails-pg-thin.png)
 
 Rails + MongoDB
 
