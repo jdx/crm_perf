@@ -29,6 +29,7 @@ Results
 | Rails (Webrick)    | PostgreSQL |        | 5722  | 278ms         |
 | Rails (Thin)       | PostgreSQL |        | 6525  | 431ms         |
 | Rails (unicorn 3x) | PostgreSQL |        | 16060 | 252ms         |
+| Rails (unicorn 4x) | PostgreSQL |        | 13439 | 315ms         |
 | Rails (Thin)       | MongoDB    | no orm | 4875  | 560ms         |
 | node.js            | PostgreSQL |        | 26080 | 100ms         |
 | node.js            | MongoDB    |        | 27304 | 71ms          |
@@ -63,6 +64,10 @@ blitz.io
 [Rails (unicorn 3x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d8256ff)
 
 ![Rails (unicorn 3x) + MongoDB](rails-pg-unicorn3.png)
+
+[Rails (unicorn 4x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de2283c)
+
+![Rails (unicorn 4x) + MongoDB](rails-pg-unicorn4.png)
 
 [Rails (Thin) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d42e374)
 
