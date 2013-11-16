@@ -35,6 +35,7 @@ Results
 | Sinatra (unicorn 10x, 1000 users) | MongoDB    | no orm | 28215 | 42ms          |
 | Sinatra (unicorn 10x, 2000 users) | MongoDB    | no orm | 46286 | 205ms         |
 | Sinatra (unicorn 10x, 4000 users) | MongoDB    | no orm | 65494 | 152ms         |
+| Sinatra (unicorn 20x, 5000 users) | MongoDB    | no orm | 65907 | 291ms         |
 | node.js                           | PostgreSQL |        | 26080 | 100ms         |
 | node.js                           | MongoDB    |        | 27304 | 71ms          |
 | Scala/Play                        | MongoDB    |        | 25811 | 68ms          |
@@ -93,6 +94,10 @@ blitz.io
 [Sinatra (unicorn 10x 4000 users) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d41c1a4)
 
 ![Sinatra (unicorn 10x 4000 users) + MongoDB](sinatra-mongo-unicorn10-4000.png)
+
+[Sinatra (unicorn 20x 5000 users) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d81bd5c)
+
+![Sinatra (unicorn 20x 5000 users) + MongoDB](sinatra-mongo-unicorn20-5000.png)
 
 [node.js + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de36ccb)
 
