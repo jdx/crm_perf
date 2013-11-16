@@ -37,8 +37,11 @@ Results
 | Sinatra (unicorn 10x, 4000 users) | MongoDB    | no orm | 65494 | 152ms         |
 | Sinatra (unicorn 20x, 5000 users) | MongoDB    | no orm | 65907 | 291ms         |
 | node.js                           | PostgreSQL |        | 26080 | 100ms         |
-| node.js                           | MongoDB    |        | 27304 | 71ms          |
+| node.js (1000 users)              | MongoDB    |        | 27304 | 71ms          |
+| node.js (2000 users)              | MongoDB    |        | 46064 | 198ms         |
+| node.js (4000 users)              | MongoDB    |        | 52390 | 246ms         |
 | Scala/Play                        | MongoDB    |        | 25811 | 68ms          |
+| Scala/Play (4000 users)           | MongoDB    |        | 84012 | 60ms          |
 
 Notes
 -----
@@ -103,10 +106,22 @@ blitz.io
 
 ![node.js + MongoDB](node-pg.png)
 
-[node.js + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d637839)
+[node.js + MongoDB 1000 users](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d637839)
 
-![node.js + MongoDB](node-mongo.png)
+![node.js + MongoDB 1000 users](node-mongo.png)
 
-[Scala (Play) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d62e6f2)
+[node.js + MongoDB 2000 users](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d819619)
 
-![Scala + MongoDB](scala-mongo.png)
+![node.js + MongoDB 2000 users](node-mongo-2000.png)
+
+[node.js + MongoDB 4000 users](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de1e980)
+
+![node.js + MongoDB 4000 users](node-mongo-4000.png)
+
+[Scala (Play) + MongoDB 1000 users](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d62e6f2)
+
+![Scala + MongoDB 1000 users](scala-mongo.png)
+
+[Scala (Play) + MongoDB 4000 users](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de1dbb9)
+
+![Scala + MongoDB 4000 users](scala-mongo-4000.png)
