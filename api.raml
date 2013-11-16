@@ -1,0 +1,60 @@
+#%RAML 0.8
+---
+title: CRM App
+baseUri: http://crm-rails.herokuapp.com/{version}/api
+version: v1
+
+/customers:
+  displayName: Customers
+  description: Collection of customers
+  get:
+    description: Lists all the customers
+    responses:
+      200:
+        body:
+          application/json:
+            schema: |
+              {
+                "title": "Customers"
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "name":  { "type": "string" },
+                    "phone": { "type": "string" }
+                  }
+                }
+              }
+  post:
+    description: Adds a customer
+    responses:
+      201:
+        description: Customer added
+    body:
+      application/json:
+        schema: |
+          {
+            "title": "Customer"
+            "type": "object",
+            "properties": {
+              "name":  { "type": "string" },
+              "phone": { "type": "string" }
+            }
+          }
+  /{customer_id}:
+    description: A specific customer
+    put:
+      description: Updates a customer
+      responses:
+        200:
+          description: Customer updated
+      body:
+        application/json:
+          schema: |
+            {
+              "title": "Customer"
+              "type": "object",
+              "properties": {
+                "name":  { "type": "string" },
+                "phone": { "type": "string" }
+              }
+            }
