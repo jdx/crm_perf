@@ -46,7 +46,6 @@ Results
 Notes
 -----
 
-* sinatra blew everything away, but running 10 process on one box is sort of cheating.
 * anything not marked as 'HTML' was hitting `api/v1/customers.json`.
 * node.js tests never used an orm
 * It's very interesting that rails + mongo was slower than rails + pg since you'd think mongo would be faster, and that there was no ORM with mongo. This was repeatable too.
