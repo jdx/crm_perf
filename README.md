@@ -30,8 +30,10 @@ Results
 | Rails (Thin)                      | PostgreSQL |        | 6525  | 431ms         |
 | Rails (unicorn 3x)                | PostgreSQL |        | 16060 | 252ms         |
 | Rails (unicorn 4x)                | PostgreSQL |        | 13439 | 315ms         |
+| Rails (puma/jruby)                | PostgreSQL |        | 3437  | 512ms         |
 | Rails (Thin)                      | MongoDB    | no orm | 4875  | 560ms         |
-| Sinatra (Thin)                    | MongoDB    | no orm | 12455 | 234ms         |
+| Sinatra (Thin)                    | MongoDB    | no orm | 12455 | 173ms         |
+| Sinatra (puma)                    | MongoDB    | no orm | 8585  | 234ms         |
 | Sinatra (unicorn 10x, 1000 users) | MongoDB    | no orm | 28215 | 42ms          |
 | Sinatra (unicorn 10x, 2000 users) | MongoDB    | no orm | 46286 | 205ms         |
 | Sinatra (unicorn 10x, 4000 users) | MongoDB    | no orm | 65494 | 152ms         |
@@ -71,11 +73,15 @@ blitz.io
 
 [Rails (unicorn 3x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d8256ff)
 
-![Rails (unicorn 3x) + MongoDB](rails-pg-unicorn3.png)
+![Rails (unicorn 3x) + PostgreSQL](rails-pg-unicorn3.png)
 
-[Rails (unicorn 4x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de2283c)
+[Rails (unicorn 4x) + PostgreSQL](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de2283c)
 
-![Rails (unicorn 4x) + MongoDB](rails-pg-unicorn4.png)
+![Rails (unicorn 4x) + PostgreSQL](rails-pg-unicorn4.png)
+
+[Rails (puma) + PostgreSQL](https://www.blitz.io/report/719c0c07f29634f629f95ba9adbc681b)
+
+![Rails (puma) + PostgreSQL](rails-pg-puma.png)
 
 [Rails (Thin) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4d42e374)
 
@@ -88,6 +94,10 @@ blitz.io
 [Sinatra (unicorn 10x) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de20966)
 
 ![Sinatra (unicorn 10x) + MongoDB](sinatra-mongo-unicorn10.png)
+
+[Sinatra (puma) + MongoDB](https://www.blitz.io/report/719c0c07f29634f629f95ba9ad7a58d9)
+
+![Sinatra (puma) + MongoDB](sinatra-mongo-puma.png)
 
 [Sinatra (unicorn 10x 2000 users) + MongoDB](https://www.blitz.io/report/dd5557fe3122f5542d33807c4de20097)
 
